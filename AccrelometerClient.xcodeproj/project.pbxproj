@@ -15,6 +15,10 @@
 		34432C1C1E672CAD0018F9F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34432C1A1E672CAD0018F9F5 /* LaunchScreen.storyboard */; };
 		34432C271E672CAD0018F9F5 /* AccrelometerClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34432C261E672CAD0018F9F5 /* AccrelometerClientTests.swift */; };
 		34432C321E672CAD0018F9F5 /* AccrelometerClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34432C311E672CAD0018F9F5 /* AccrelometerClientUITests.swift */; };
+		34432C481E6732270018F9F5 /* SocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34432C471E6732270018F9F5 /* SocketIO.framework */; };
+		34432C491E6732270018F9F5 /* SocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34432C471E6732270018F9F5 /* SocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34432C4C1E6738BC0018F9F5 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34432C4B1E6738BC0018F9F5 /* SocketIOManager.swift */; };
+		34432C4F1E6743D90018F9F5 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34432C4E1E6743D90018F9F5 /* ViewController1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		34432C4A1E6732270018F9F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34432C491E6732270018F9F5 /* SocketIO.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		34432C0B1E672CAD0018F9F5 /* AccrelometerClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccrelometerClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34432C0E1E672CAD0018F9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +67,9 @@
 		34432C2D1E672CAD0018F9F5 /* AccrelometerClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccrelometerClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34432C311E672CAD0018F9F5 /* AccrelometerClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccrelometerClientUITests.swift; sourceTree = "<group>"; };
 		34432C331E672CAD0018F9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34432C471E6732270018F9F5 /* SocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketIO.framework; path = Carthage/Build/iOS/SocketIO.framework; sourceTree = "<group>"; };
+		34432C4B1E6738BC0018F9F5 /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		34432C4E1E6743D90018F9F5 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34432C481E6732270018F9F5 /* SocketIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +101,7 @@
 		34432C021E672CAD0018F9F5 = {
 			isa = PBXGroup;
 			children = (
+				34432C471E6732270018F9F5 /* SocketIO.framework */,
 				34432C0D1E672CAD0018F9F5 /* AccrelometerClient */,
 				34432C251E672CAD0018F9F5 /* AccrelometerClientTests */,
 				34432C301E672CAD0018F9F5 /* AccrelometerClientUITests */,
@@ -106,6 +129,8 @@
 				34432C1A1E672CAD0018F9F5 /* LaunchScreen.storyboard */,
 				34432C1D1E672CAD0018F9F5 /* Info.plist */,
 				34432C151E672CAD0018F9F5 /* AccrelometerClient.xcdatamodeld */,
+				34432C4B1E6738BC0018F9F5 /* SocketIOManager.swift */,
+				34432C4E1E6743D90018F9F5 /* ViewController1.swift */,
 			);
 			path = AccrelometerClient;
 			sourceTree = "<group>";
@@ -138,6 +163,7 @@
 				34432C071E672CAD0018F9F5 /* Sources */,
 				34432C081E672CAD0018F9F5 /* Frameworks */,
 				34432C091E672CAD0018F9F5 /* Resources */,
+				34432C4A1E6732270018F9F5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34432C4C1E6738BC0018F9F5 /* SocketIOManager.swift in Sources */,
+				34432C4F1E6743D90018F9F5 /* ViewController1.swift in Sources */,
 				34432C171E672CAD0018F9F5 /* AccrelometerClient.xcdatamodeld in Sources */,
 				34432C111E672CAD0018F9F5 /* ViewController.swift in Sources */,
 				34432C0F1E672CAD0018F9F5 /* AppDelegate.swift in Sources */,
@@ -420,6 +448,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6KYZZ37J4K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AccrelometerClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DT.AccrelometerClient;
@@ -433,6 +465,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6KYZZ37J4K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AccrelometerClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DT.AccrelometerClient;

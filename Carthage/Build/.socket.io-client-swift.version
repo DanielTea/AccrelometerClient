@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.2.1\nBuild version 8C1002",
+  "commitish" : "v8.2.0",
+  "iOS" : [
+    {
+      "name" : "SocketIO",
+      "md5" : "688e354be9492bf459efaf7be82312d1"
+    }
+  ]
+}
